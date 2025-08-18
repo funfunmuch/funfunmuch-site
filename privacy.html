@@ -2,63 +2,145 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>プライバシーポリシー – FunFunMuch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>プライバシーポリシー / Privacy Policy – FunFunMuch</title>
+  <meta name="description" content="FunFunMuch プライバシーポリシー（日本語・英語）" />
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.8;margin:0;background:#fafafa;color:#222}
-    main{max-width:960px;margin:auto;background:#fff;border:1px solid #eee;border-radius:12px;padding:24px;margin-top:24px}
-    h1{margin-top:0}
+    :root{--bg:#fafafa;--card:#fff;--line:#eee;--ink:#222;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.75;margin:0;color:var(--ink);background:var(--bg)}
+    header,main{max-width:960px;margin:auto;padding:24px}
+    header{background:var(--card);border-bottom:1px solid var(--line)}
+    h1{margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin:16px 0}
+    .lang-switch{display:flex;gap:8px;margin-top:8px}
+    .btn{appearance:none;border:1px solid var(--line);background:#fff;padding:6px 12px;border-radius:999px;cursor:pointer}
+    .btn[aria-pressed="true"]{border-color:#0a58ca}
     a{color:#0a58ca;text-decoration:none}
-    small{color:#666}
+    footer{max-width:960px;margin:24px auto;padding:0 24px 24px;color:var(--muted)}
+    .hidden{display:none}
+    ul{margin:0 0 1rem 1.2rem}
   </style>
 </head>
 <body>
+<header>
+  <h1>プライバシーポリシー / Privacy Policy</h1>
+  <div class="lang-switch" role="group" aria-label="Language switch">
+    <button id="btn-ja" class="btn" aria-pressed="true">日本語</button>
+    <button id="btn-en" class="btn" aria-pressed="false">English</button>
+  </div>
+  <p class="muted">施行日 / Effective date：2025-08-18</p>
+<p class="muted">最終改定日 / Last updated：2025-08-18</p>
+
+</header>
+
 <main>
-  <h1>プライバシーポリシー</h1>
-  <p><small>施行日：2025年MM月DD日</small></p>
+  <!-- 日本語 -->
+  <section id="ja">
+    <div class="card">
+      <h2>基本方針</h2>
+      <p>本アプリ「FunFunMuch」（以下「本アプリ」）では、<strong>開発者自身が利用者を特定できる個人情報を収集・保存することはありません</strong>。</p>
+      <p>ただし、広告配信のために以下の<strong>第三者サービス</strong>を利用しており、当該サービスが端末情報等を自動的に収集する場合があります。</p>
+    </div>
 
-  <p>FunFunMuch（以下「当社」）は、当社が提供するスマートフォンアプリおよび本ウェブサイトにおけるユーザーの個人情報・ユーザーデータの取扱いについて、以下のとおり定めます。</p>
+    <div class="card">
+      <h2>利用する第三者サービス</h2>
+      <ul>
+        <li>Google AdMob（広告配信） – <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+      </ul>
+    </div>
 
-  <h2>1. 収集する情報</h2>
-  <ul>
-    <li>アプリ利用情報（ゲームのプレイ状況、操作イベント、クラッシュログ 等）</li>
-    <li>端末情報（OS種別・バージョン、国/地域、言語設定 等）</li>
-    <li>広告識別子（Android Advertising ID）※広告を表示する場合</li>
-  </ul>
-  <p>※当社がユーザーを直接特定できる氏名・住所・電話番号等は収集しません。</p>
+    <div class="card">
+      <h2>収集される可能性のある情報</h2>
+      <ul>
+        <li>広告ID（Android Advertising ID など）</li>
+        <li>端末情報（OS種別・バージョン、機種、言語/地域など）</li>
+        <li>利用状況に関する情報（アプリの起動/閲覧に関するイベント等）</li>
+      </ul>
+      <p>これらの情報は<strong>広告配信および最適化</strong>の目的で利用されます。開発者が個別に収集・保管・共有することはありません。</p>
+    </div>
 
-  <h2>2. 利用目的</h2>
-  <ul>
-    <li>アプリ品質向上（不具合解析、使い勝手の改善）</li>
-    <li>利用状況の統計分析</li>
-    <li>広告の配信・最適化（※広告SDKを導入している場合）</li>
-    <li>お問い合わせ対応</li>
-  </ul>
+    <div class="card">
+      <h2>ユーザーの選択</h2>
+      <p>端末の設定から広告のパーソナライズに関する選択（無効化、リセット等）が可能です。設定場所はOSのバージョンにより異なります。</p>
+    </div>
 
-  <h2>3. 収集方法と第三者提供</h2>
-  <p>当社は、アプリ内に組み込まれた第三者のSDK（例：Google Play Services / Firebase Analytics / Google Mobile Ads など）を通じて情報を収集することがあります。これらの第三者は独自のプライバシーポリシーに基づきデータを処理します。</p>
-  <p>法令に基づく場合を除き、上記目的の範囲を超えて第三者に提供することはありません。</p>
+    <div class="card">
+      <h2>お問い合わせ</h2>
+      <p>本ポリシーに関するご質問は、<a href="mailto:info@funfunmuch.com">info@funfunmuch.com</a> までご連絡ください。</p>
+    </div>
 
-  <h2>4. データの保存期間</h2>
-  <p>利用目的の達成に必要な期間保存し、その後は適切に削除または匿名化します。</p>
+    <div class="card muted">
+      <p>本ポリシーは、必要に応じて改定されることがあります。重要な変更がある場合は本ページでお知らせします。</p>
+    </div>
+  </section>
 
-  <h2>5. セキュリティ</h2>
-  <p>当社は、収集した情報への不正アクセス・紛失・改ざん・漏えい等を防止するため、合理的な安全対策を講じます。</p>
+  <!-- English -->
+  <section id="en" class="hidden" lang="en">
+    <div class="card">
+      <h2>Basic Policy</h2>
+      <p>The developer of the mobile application “FunFunMuch” does <strong>not</strong> collect or store personally identifiable information directly.</p>
+      <p>However, the App uses the following <strong>third-party service</strong> for advertisement delivery, which may automatically collect certain device information.</p>
+    </div>
 
-  <h2>6. ユーザーの権利</h2>
-  <p>ユーザーは、データの開示・削除等を希望する場合、下記連絡先までお問い合わせください。合理的な範囲で速やかに対応します。</p>
+    <div class="card">
+      <h2>Third-party Service Used</h2>
+      <ul>
+        <li>Google AdMob (advertising) – <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+      </ul>
+    </div>
 
-  <h2>7. 未成年の利用</h2>
-  <p>13歳未満の方が利用する場合は、保護者の同意を得たうえでご利用ください。</p>
+    <div class="card">
+      <h2>Information That May Be Collected</h2>
+      <ul>
+        <li>Advertising ID</li>
+        <li>Device information (OS/version, model, language/region, etc.)</li>
+        <li>Usage data related to app interactions and events</li>
+      </ul>
+      <p>Such information is used <strong>solely for advertising and optimization</strong>. The developer does not personally collect, store, or share this information.</p>
+    </div>
 
-  <h2>8. ポリシーの改定</h2>
-  <p>本ポリシーの内容は、法令等の変更やサービス内容に応じて改定されることがあります。重要な変更がある場合は本ページにて告知します。</p>
+    <div class="card">
+      <h2>User Choices</h2>
+      <p>You can manage ad personalization preferences (e.g., limit or reset advertising ID) from your device settings. The location of these settings may vary by OS version.</p>
+    </div>
 
-  <h2>9. 事業者・連絡先</h2>
-  <p>FunFunMuch（個人事業）<br>
-     連絡先：<a href="mailto:info@funfunmuch.com">info@funfunmuch.com</a></p>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>If you have any questions about this Policy, please contact: <a href="mailto:info@funfunmuch.com">info@funfunmuch.com</a></p>
+    </div>
 
-  <p><a href="./index.html">トップへ戻る</a></p>
+    <div class="card muted">
+      <p>This Policy may be updated from time to time. Significant changes will be announced on this page.</p>
+    </div>
+  </section>
 </main>
+
+<footer>
+  © <span id="y"></span> FunFunMuch
+</footer>
+
+<script>
+  // year
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  // simple language toggle
+  const btnJa = document.getElementById('btn-ja');
+  const btnEn = document.getElementById('btn-en');
+  const secJa = document.getElementById('ja');
+  const secEn = document.getElementById('en');
+
+  function toggle(lang){
+    const ja = lang === 'ja';
+    secJa.classList.toggle('hidden', !ja);
+    secEn.classList.toggle('hidden', ja);
+    btnJa.setAttribute('aria-pressed', ja);
+    btnEn.setAttribute('aria-pressed', !ja);
+    document.documentElement.lang = ja ? 'ja' : 'en';
+  }
+  btnJa.addEventListener('click', ()=>toggle('ja'));
+  btnEn.addEventListener('click', ()=>toggle('en'));
+</script>
 </body>
 </html>
